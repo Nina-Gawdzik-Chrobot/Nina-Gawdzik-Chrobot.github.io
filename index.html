@@ -24,14 +24,14 @@
 </header>
 
 <!--home page description with logo-->
-<div class="px-4 py-5 my-5 text-center text-white">
+<div class="px-4 py-5 text-center text-white">
     <img class="d-block mx-auto mb-4" src="logo.png" alt="" width="246">
     <h1 class="display-5 fw-bold text-body-emphasis">Gabinet psychiatryczno-psychoterapeutyczny</h1>
     <h1 class="display-5 fw-bold text-body-emphasis">Nina Gawdzik-Chrobot</h1>
 </div>
 
 <!--page menu-->
-<header class="p-3 border-bottom" style="margin-top: 200px">
+<header class="p-3 border-bottom">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -212,8 +212,8 @@
                     <li>Problemu nadpobudliwości psychoruchowej u dzieci i dorosłych</li>
                     <li>Trudności adaptacyjne</li>
                     <li>Trudności w relacjach interpersonalnych</li>
-                    <li>Zaburzenia snu: bezsenność, narkolepsja</li>
-                    <li>Uzależnienia: alkoholizm, uzależnienie od narkotyków czy leków</li>
+                    <li>Zaburzeń snu: bezsenność, narkolepsja</li>
+                    <li>Uzależnień: alkoholizmu, narkotyków czy leków</li>
                 </ul>
                 <p>Obejmuje farmakoterapię lub psychoterapię</p>
             </div>
@@ -275,7 +275,7 @@
             aria-expanded="false">
         Umów wizytę
     </button>
-    <ul class="dropdown-menu">
+    <ul id="widget-hacking-magic" class="dropdown-menu show" style="transform: translate(-100vw);">
         <li style="width: 390px; min-height:590px; whitespace: nowrap;"><a id="zl-url" class="zl-url dropdown-item"
                                                                            href="https://www.znanylekarz.pl/nina-gawdzik-chrobot-2/psychiatra-psychoterapeuta/piekary-slaskie"
                                                                            rel="nofollow"
@@ -309,5 +309,16 @@
             targetCollapse.classList.toggle('show');
         });
     });
+</script>
+<script>
+    function moveOffScreen() {
+          const element = document.getElementById('widget-hacking-magic');
+
+          setTimeout(() => {
+              element.classList.remove('show');
+          }, 1500);
+      }
+
+      document.addEventListener('DOMContentLoaded', moveOffScreen);
 </script>
 </html>
